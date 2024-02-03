@@ -38,3 +38,9 @@
   - **Training:** Consists of the file adapted to the model's requirements.
   
   - **Model:** Contains the model that is either newly trained with the data or retrained from the last model if available.
+
+You can also check if the modification you have made can still run the pipeline with pytest :
+
+   ```bash
+   pytest
+   ```
