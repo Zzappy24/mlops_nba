@@ -99,7 +99,7 @@ def dump_model_temp(model):
 
 def main_training():
     df = read_data()
-    model_file = [f for f in Path(MODEL_DIR).iterdir() if f.is_file()]
+    model_file = list(TRANFORMED_DATA_DIR_TEMP.glob('*.joblib'))
     if len(model_file) >= 1:
         print("adjustement")
         _, model = retrain_model(model_file[0],df)
